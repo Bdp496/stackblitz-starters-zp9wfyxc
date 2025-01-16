@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="client-logo.png" alt="ABC Fitness Studio Logo" style="height: 50px;">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="about.html">About Us</a> |
+            <a href="custom.html">Community</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Gallery</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="product1.jpg" alt="Yoga Mat" style="width: 100px; height: 100px;">
+                    <p>Yoga Mat</p>
+                    <button onclick="addToCart('Yoga Mat')">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="product2.jpg" alt="Water Bottle" style="width: 100px; height: 100px;">
+                    <p>Water Bottle</p>
+                    <button onclick="addToCart('Water Bottle')">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="product3.jpg" alt="Fitness Tee Shirt" style="width: 100px; height: 100px;">
+                    <p>Fitness Tee Shirt</p>
+                    <button onclick="addToCart('Fitness Tee Shirt')">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="product4.jpg" alt="Dumbbells" style="width: 100px; height: 100px;">
+                    <p>Dumbbells</p>
+                    <button onclick="addToCart('Dumbbells')">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="product5.jpg" alt="Exercise Ball" style="width: 100px; height: 100px;">
+                    <p>Exercise Ball</p>
+                    <button onclick="addToCart('Exercise Ball')">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="product6.jpg" alt="Resistance Bands" style="width: 100px; height: 100px;">
+                    <p>Resistance Bands</p>
+                    <button onclick="addToCart('Resistance Bands')">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+        <div style="margin-top: 20px;">
+            <button onclick="viewCart()">View Cart</button>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="processOrder()">Process Order</button>
+        </div>
+    </main>
+    <footer>
+        <p>Contact us at: info@abcfitness.com | Follow us on social media</p>
+        <button onclick="subscribeAlert()">Subscribe</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
